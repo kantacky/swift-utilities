@@ -5,7 +5,7 @@
 //  Created by Kanta Oikawa on 2024/05/16.
 //
 
-@testable import Version
+import SwiftUtilities
 import XCTest
 
 final class VersionTests: XCTestCase {

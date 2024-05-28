@@ -17,7 +17,7 @@ build-all-platforms:
 			-skipMacroValidation \
 			-configuration $(CONFIG) \
 			-workspace .github/package.xcworkspace \
-			-scheme ComposableArchitecture \
+			-scheme SwiftUtilities \
 			-destination generic/platform="$$platform" || exit 1; \
 	done;
 
