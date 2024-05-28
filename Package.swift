@@ -3,26 +3,24 @@
 import PackageDescription
 
 let package = Package(
-    name: "Utilities",
+    name: "swift-utilities",
     defaultLocalization: "en",
     platforms: [
         .iOS(.v17),
         .macOS(.v14),
+        .macCatalyst(.v17),
         .visionOS(.v1),
         .tvOS(.v17),
         .watchOS(.v10),
     ],
     products: [
-        .library(
-            name: "Utilities",
-            targets: ["Utilities"]
-        ),
+        .library(name: "SwiftUtilities", targets: ["SwiftUtilities"]),
     ],
     targets: [
-        .target(name: "Utilities"),
+        .target(name: "SwiftUtilities"),
         .testTarget(
-            name: "UtilitiesTests",
-            dependencies: ["Utilities"]
+            name: "SwiftUtilitiesTests",
+            dependencies: ["SwiftUtilities"]
         ),
     ]
 )
